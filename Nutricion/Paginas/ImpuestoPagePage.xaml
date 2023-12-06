@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutricion.Paginas.ImpuestoPagePage"
+             Title="ImpuestoPagePage">
+    <VerticalStackLayout>
+        <Label Text="Calcula tu Indice de masa corporal"
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Center" />
+
+            <Entry x:Name="TxtCantidad" Placeholder="Peso(kg)" Keyboard="Numeric"></Entry>
+            <Entry x:Name="TxtPorcentaje" Placeholder="Altura(m)" Keyboard="Numeric"></Entry>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+            <Label x:Name="lblGuardar"></Label>
+            <Label x:Name="lblResultado"></Label>
+            <Image x:Name="imgResultado" WidthRequest="300" HeightRequest="300"></Image>
+    </VerticalStackLayout>
+</ContentPage>
